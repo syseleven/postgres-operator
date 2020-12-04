@@ -25,7 +25,7 @@ sync_config() {
     yq write --inplace --doc 2 "$INSTALLER_ROOT/kubectl/$KUBECTL_SPEC_PREFIX.yml" 'data"values.yaml"' -- "$(cat $MASTER_CONFIG)"
     yq write --inplace --doc 2 "$INSTALLER_ROOT/kubectl/$KUBECTL_SPEC_PREFIX-ocp311.yml" 'data"values.yaml"' -- "$(cat $MASTER_CONFIG)"
 
-    cat "$INSTALLER_ROOT/helm/helm_template.yaml" "$MASTER_CONFIG" > "$INSTALLER_ROOT/helm/values.yaml"
+    cat "$INSTALLER_ROOT/helm/postgres-operator/helm_template.yaml" "$MASTER_CONFIG" > "$INSTALLER_ROOT/helm/postgres-operator/values.yaml"
 }
 
 # sync operator configuration

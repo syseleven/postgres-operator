@@ -20,7 +20,7 @@ After configuring the `values.yaml` file with you configuration options, the
 installer will be run using the `helm` command line tool and takes care of
 setting up all of the objects required to run the PostgreSQL Operator.
 
-The `postgres-operator` Helm chart is available in the [Helm](https://github.com/CrunchyData/postgres-operator/tree/master/installers/helm)
+The `postgres-operator` Helm chart is available in the [Helm](https://github.com/CrunchyData/postgres-operator/tree/master/installers/helm/postgres-operator)
 directory in the PostgreSQL Operator repository.
 
 ## Requirements
@@ -64,7 +64,7 @@ file will be used to populate the configuation options in the ConfigMap.
 ### Configuration - `values.yaml`
 
 The `values.yaml` file contains all of the configuration parametes for deploying
-the PostgreSQL Operator. The [values.yaml file](https://github.com/CrunchyData/postgres-operator/blob/master/installers/helm/values.yaml) contains the defaults that
+the PostgreSQL Operator. The [values.yaml file](https://github.com/CrunchyData/postgres-operator/blob/master/installers/helm/postgres-operator/values.yaml) contains the defaults that
 should work in most Kubernetes environments, but it may require some customization.
 
 For a detailed description of each configuration parameter, please read the
