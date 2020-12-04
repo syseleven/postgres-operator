@@ -21,14 +21,14 @@ git clone https://github.com/CrunchyData/postgres-operator.git
 ## Installing
 
 ```
-cd postgres-operator/installers/metrics/helm
+cd postgres-operator/installers/metrics/helm/postgres-operator-metrics
 helm install metrics . -n pgo
 ```
 
 ## Uninstalling
 
 ```
-cd postgres-operator/installers/metrics/helm
+cd postgres-operator/installers/metrics/helm/postgres-operator-metrics
 helm uninstall metrics -n pgo
 ```
 

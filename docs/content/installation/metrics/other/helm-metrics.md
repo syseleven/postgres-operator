@@ -22,7 +22,7 @@ installer will be run using the `helm` command line tool and takes care of
 setting up all of the objects required to run the PostgreSQL Operator.
 
 The PostgreSQL Operator Monitoring Helm chart is available in the
-[Helm](https://github.com/CrunchyData/postgres-operator/tree/master/installers/metrics/helm)
+[Helm](https://github.com/CrunchyData/postgres-operator/tree/master/installers/metrics/helm/postgres-operator-metrics)
 directory in the PostgreSQL Operator repository.
 
 ## Requirements
@@ -58,7 +58,7 @@ file will be used to populate the configuation options in the ConfigMap.
 
 The `values.yaml` file contains all of the configuration parameters for deploying
 the PostgreSQL Operator Monitoring infrastructure. 
-The [values.yaml file](https://github.com/CrunchyData/postgres-operator/blob/master/installers/metrics/helm/values.yaml)
+The [values.yaml file](https://github.com/CrunchyData/postgres-operator/blob/master/installers/metrics/helm/postgres-operator-metrics/values.yaml)
 contains the defaults that should work in most Kubernetes environments, but it may require some customization.
 
 For a detailed description of each configuration parameter, please read the
